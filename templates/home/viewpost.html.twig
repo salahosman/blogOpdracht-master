@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ post.title }}{% endblock %}
+
+ {% block stylesheets %}
+
+     <style>
+         #viewpost {
+             margin-top: 125px;
+         }
+     </style>
+ {% endblock %}
+{% block body %}
+<div class="container" id="viewpost">
+    <article class="card mb-5">
+        <img class="card-img-top" style="max-width: 850px" src="{{ vich_uploader_asset(post, 'imageFile') }}" alt="Card image cap">
+        <div class="card-body">
+            <h2 class="card-title">{{ post.title }}</h2>
+            <p class="card-text">{{  post.body|raw }}</p>
+
+        </div>
+{#        <div class="card-footer text-muted">#}
+{#            @R.Get(R.Post_Date) @item.DateCreated.ToString("yyyy-MM-dd HH:mm")#}
+{#        </div>#}
+    </article>
+</div>
+{% endblock %}

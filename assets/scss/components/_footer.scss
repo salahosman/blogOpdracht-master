@@ -1,0 +1,36 @@
+footer {
+  flex-shrink: 0;
+  .bg-dark {
+    background-color: #535353 !important;
+  }
+
+  ul {
+   list-style: none;
+  }
+}
+
+.f-header {
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.f-header2 {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.hr-line {
+  width: 20%;
+  border: 3px solid $white;
+}
+
+.hr-right {
+  border-right: 1px solid $white;
+}
+
+.hr-credits {
+  border-top: 1px solid $white;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}

@@ -1,0 +1,35 @@
+section#contact {
+
+
+  .section-heading {
+    color: #FFF;
+  }
+  .form-group {
+    margin-bottom: 25px;
+
+    label {
+      font-weight: 600;
+    }
+
+    input.form-control {
+      height: auto;
+      border-radius: 0;
+      border: none;
+    }
+    textarea.form-control {
+      height: 248px;
+      border-radius: 0;
+      border: none;
+    }
+  }
+
+  .form-control:focus {
+    border-color: $secondary;
+    box-shadow: none;
+  }
+
+  ::-webkit-input-placeholder, :-moz-placeholder, ::-moz-placeholder, :-ms-input-placeholder {
+    font-weight: 700;
+    color: #ced4da;
+  }
+}

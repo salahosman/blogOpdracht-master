@@ -1,0 +1,123 @@
+// Styling for the navbar
+#mainNav {
+  background-color: $blue-light;
+  font-size: 18px;
+
+  .navbar-toggler {
+    font-size: 12px;
+    right: 0;
+    border: 0;
+    background-color: $blue-light;
+  }
+
+  .navbar-brand {
+    color: $white;
+    font-weight: 600;
+    padding-top: unset;
+    padding-bottom: unset;
+
+    &.active,
+    &:active,
+    &:focus,
+    &:hover {
+      color: darken($gray-200, 10%);
+    }
+  }
+
+  .navbar-nav {
+    .nav-item {
+      .nav-link {
+        font-size: 90%;
+        font-weight: 400;
+        padding: 0.75em 0;
+        letter-spacing: 1px;
+        color: $white;
+
+
+        &.active,
+        &:hover {
+          color: $primary;
+        }
+      }
+    }
+  }
+
+  &.navbar-shrink {
+    .nav-item {
+      .nav-link {
+        font-size: 90%;
+        font-weight: 400;
+        padding: 0.75em 0;
+        letter-spacing: 1px;
+        color: $white;
+
+
+        &.active,
+        &:hover {
+          color: $primary;
+        }
+      }
+    }
+  }
+}
+
+@media(min-width:992px) {
+  #mainNav {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
+    -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
+    transition: padding-top 0.3s, padding-bottom 0.3s;
+    border: none;
+    background-color: $white;
+
+    .navbar-brand {
+      color: $blue-light;
+      font-size: 1.75em;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      transition: all 0.3s;
+
+      &.active,
+      &:active,
+      &:focus,
+      &:hover {
+        color: darken($gray-200, 10%);
+      }
+    }
+
+    .navbar-nav {
+      .nav-item {
+        .nav-link {
+          padding: 1.1em 1em !important;
+          color: $primary;
+          font-size: 100%;
+        }
+      }
+    }
+
+    &.navbar-shrink {
+      padding-top: 0;
+      padding-bottom: 0;
+      background-color: $blue-light;
+      color: black;
+
+      .navbar-brand {
+        padding: 8px 5px;
+        background-color: white;
+      }
+
+      .nav-item {
+        .nav-link {
+          color: $white;
+          font-size: 100%;
+        }
+
+        &.active,
+        &:hover {
+          color: darken($primary, 20%);
+        }
+      }
+    }
+  }
+}

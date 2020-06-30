@@ -1,0 +1,26 @@
+body {
+    background-color: lightgray;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    height: 100%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+html {
+    scroll-behavior: smooth;
+    height: 100%;
+}
+.content {
+    flex: 1 0 auto;
+}
+.logo {
+    height: 70px;
+}
